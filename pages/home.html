@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+	
+
+        var	name = prompt("What is your name?");
+        
+    window.addEventListener("load", ()=> {
+            document.getElementById('demo').innerHTML =  "Hello " + name + "!" ;
+    });
+    
+    
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+      </header>
+
+          <!--Début de la section About-->
+          <div class="container mt-5 mb-0">
+            <div class="aboutText jumbotron d-flex justify-content-center row m-0 pb-3">
+                 <section class="lesTroisCercle d-flex justify-content-center pb-0 row">
+                      <span class=""></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span id = "logo" class="m-auto pb-5">&lt&gt</span>
+                 </section>
+                 <h1 class="mb-0 d-flex justify-content-center fluid col-12 mt-2"><span id="demo"></h1>
+                <hr class="d-flex justify-content-center fluid column">
+                </div>
+          </div>
+
+
+</body>
+</html>
