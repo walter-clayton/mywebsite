@@ -10,6 +10,12 @@
     width:150px;
 }
 
+.card {
+    border-color: #F9AA8F !important;
+    border-width: 1px !important;
+    box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #enter {
     color: #F9AA8F;
 }
@@ -22,12 +28,16 @@ h1 {
 
 hr { width:150px; border-top:5px solid #F9AA8F !important; background: #F9AA8F}
 
+svg {
+    color: #F9AA8F;
+}
+
 @keyframes slideInFromBottom {
     0% {
-      transform: translateX(0);
+      transform: translateX(-100%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(0);
     }
   }
   
@@ -35,8 +45,7 @@ hr { width:150px; border-top:5px solid #F9AA8F !important; background: #F9AA8F}
     /* This section calls the slideInFromBottom animation we defined above */
     animation: 1s ease-out 0s 1 slideInFromBottom;
     
-    background: #333;
-    padding: 30px;
+    background: #43515A;
   }
 
 
