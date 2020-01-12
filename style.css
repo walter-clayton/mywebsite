@@ -17,7 +17,7 @@
 }
 
 #enter {
-    color: #F9AA8F;
+    color: #F9AA8F !important;
 }
 
 h1 {
@@ -27,6 +27,29 @@ h1 {
 }
 
 hr { width:150px; border-top:5px solid #F9AA8F !important; background: #F9AA8F}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+
+
+}
+
+i:hover{
+    color: #F9AA8F !important;
+}
+
+nav a:hover {
+    color: #F9AA8F !important;
+}
+
+.btn:hover{
+    box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-toggler {
+    color: #F9AA8F !important;
+}
 
 svg {
     color: #F9AA8F;

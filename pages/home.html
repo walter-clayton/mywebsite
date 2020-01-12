@@ -32,15 +32,25 @@
 </head>
 <body>
 <header>
-    <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-           <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">HOME</a>
-          <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">ABOUT</a>
-          <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">PORTFOLIO</a>
-          <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.0/examples/product/#">CONTACT</a>
+    <nav class=" navbar navbar-expand-lg p-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        <div class="collapse navbar-collapse "  id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/product/#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link" href="https://getbootstrap.com/docs/4.0/examples/product/#">CONTACT</a>
+                </li>
+            </ul>
         </div>
       </nav>
-      </header>
+</header>
 
           <!--Début de la section About-->
           <div class="container mt-5">
@@ -62,13 +72,12 @@
                     <div class="card-body">
                       <h3 class="card-title">YelpCamp</h3>
                       <strong class="d-inline-block mb-2 text-secondary">Web App</strong>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        Some quick example text to build on the card title and make up the bulk of the card's content ard title and make up the bulk of the card's content
+                      <p class="card-text">This is a web app that allows users to share campgrounds from all over the world.
                     </p>
                       </p>
                       <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-secondary">Demo</a>
-                      <i class="ml-0 fa-align-right fab fa-github fa-2x text-secondary"></i>
+                        <a href="https://agile-escarpment-38232.herokuapp.com/" class="btn btn-secondary" target="_blank">Demo</a>
+                      <a href="https://github.com/walter-clayton/yelpcamp" target="_blank"><i class="ml-0 fa-align-right fab fa-github fa-2x text-secondary"></i></a>
                       </div>
                     </div>
                   </div>
@@ -76,43 +85,44 @@
               <div class="card flex-md-row mb-4 box-shadow bg-light">
                 <div class="card-body align-items-start">
                   <h3 class="mb-0">
-                    <a class="text-dark" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Post title</a>
+                    <a class="text-dark" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Somatotype</a>
                   </h3>                  
-                  <strong class="d-inline-block my-2 text-secondary">Web App</strong>
-                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <strong class="d-inline-block my-2 text-secondary">Web Page</strong>
+                  <p class="card-text mb-auto">This is a page that allows users to know their somatotype.
+
+                    Users put in their measurements, and the canvas outputs their results on the graph.</p>
                     <div  class=" row ml-1 mt-3 justify-content-between">
-                    <a href="#" class="btn btn-secondary">Demo</a>
-                  <i class=" ml-0 mr-3 fa-align-right fab fa-github fa-2x text-secondary pr-2"></i>
+                    <a href="https://walter-clayton.github.io/somatotype/" target="_blank" class="btn btn-secondary">Demo</a>
+                  <a href="https://github.com/walter-clayton/somatotype" target="_blank"><i class=" ml-0 mr-3 fa-align-right fab fa-github fa-2x text-secondary pr-2"></i></a>
                 </div>                 
                   </div  >
-                <img class="card-img-right flex-auto d-none d-md-block rounded border border-secondary" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [250x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16f960dbce5%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16f960dbce5%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                <img class="card-img-right flex-auto d-none d-md-block rounded border border-secondary" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [250x250]" src="../assets/images/somatotype.gif" data-holder-rendered="true" style="width: 200px; height: 250px;">
               </div>
               <div class="card flex-md-row mb-4 box-shadow bg-light">
                 <div class="card-body align-items-start">
                   <h3 class="mb-0">
-                    <a class="text-dark" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Post title</a>
+                    <a class="text-dark" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Ecohoods</a>
                   </h3>                  
-                  <strong class="d-inline-block my-2 text-secondary">Web App</strong>
-                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <strong class="d-inline-block my-2 text-secondary">Hackathon</strong>
+                  <p class="card-text mb-auto"> Ecohoods is a platform that allows users to see how much money they have saved from using eco smart devices.</p>
                     <div  class=" row ml-1 mt-3 justify-content-between">
-                    <a href="#" class="btn btn-secondary">Demo</a>
-                  <i class=" ml-0 mr-3 fa-align-right fab fa-github fa-2x text-secondary pr-2"></i>
-                </div>                 
+                    <a href="https://walter-clayton.github.io/ecohoods/dashboard.html" target="_blank" class="btn btn-secondary">Demo</a>
+                    <a href="https://github.com/walter-clayton/ecohoods" target="_blank"><i class=" ml-0 mr-3 fa-align-right fab fa-github fa-2x text-secondary pr-2"></i></a>                </div>                 
                   </div  >
-                <img class="card-img-right flex-auto d-none d-md-block rounded border border-secondary" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [250x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16f960dbce5%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16f960dbce5%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+                <img class="card-img-right flex-auto d-none d-md-block rounded border border-secondary" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [250x250]" src="../assets/images/ecohoods.gif" data-holder-rendered="true" style="width: 200px; height: 250px;">
               </div>
             </div>
           </div>
         </div>
 
         <footer class="footer">
-            <div class="container d-flex flex-row flex-md-row justify-content-around">
-                <div class="column">
-                <i class="ml-0 fa-align-right fab fa-linkedin fa-2x text-secondary"></i>
-                <i class="ml-0 fa-align-right fab fa-linkedin fa-2x text-secondary"></i>                    
-                </div>
+            <div class="container d-flex flex-column flex-md-column justify-content-center mb-3">
+                <div class="mx-auto">
+                    <div class="d-flex flex-row flex-md-row justify-content-around mx-5 px-5">
+                        <a href="https://github.com/walter-clayton/" target="_blank"><i class=" mx-auto fab fa-github fa-2x text-secondary"></i></a>
+                        <a href="https://www.linkedin.com/in/walter-clayton-2b50b4191/" target="_blank"><i class=" mx-auto fab fa-linkedin fa-2x text-secondary"></i> </a>                   
+                    </div>
                 <hr>
-                <div>
                     &copy; 2020 Walter Clayton, All Rights Reserved
                 </div> 
             </div>
