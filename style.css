@@ -27,7 +27,7 @@ h1 {
     font-weight: 300 !important;
 }
 
-hr { width:150px; border-top:5px solid #F9AA8F !important; background: #F9AA8F}
+hr { width:150px; border-top:5px solid #F9AA8F ; background: #F9AA8F}
 hr.about { width:85%; border-top:3px solid #F9AA8F !important; background: #F9AA8F}
 
 a {
