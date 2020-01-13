@@ -1,0 +1,23 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Walter Clayton Portfolio Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walter-clayton/mywebsite.git"
+  },
+  "author": "Walter Clayton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walter-clayton/mywebsite/issues"
+  },
+  "homepage": "https://github.com/walter-clayton/mywebsite#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
