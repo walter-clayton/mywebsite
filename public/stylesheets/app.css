@@ -173,3 +173,23 @@ svg {
          transform: rotate(360deg);
     }
 }
+
+
+@media (max-width: 978px) {
+
+    footer span {
+        font-size: small;
+    }
+
+    .card-text p {
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .card-text p {
+        font-size: x-small;
+    }
+}
