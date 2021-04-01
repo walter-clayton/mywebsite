@@ -7,8 +7,14 @@ Click here: [Demo](http://walterclayton.com/)
 
 ![capture](./public/images/background.gif)
 
+## Run project locally
+````
+npm install
+````
+````
+npm start
+````
 ## Built with
-
 * HTML5
 * CSS3
 * BOOTSTRAP4

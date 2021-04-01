@@ -1,9 +1,9 @@
-
-
+Body {
+    background-color: #43515A; 
+}
 .jumbotron {
     background-color: #43515A !important;
 }
-
 #landing-button {
     border-color: #F9AA8F;
     color: #F9AA8F;
@@ -11,54 +11,42 @@
     background-color: transparent;
     width:150px;
 }
-
 .card {
     border-color: #F9AA8F !important;
     border-width: 1px !important;
     box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 #enter {
     color: #F9AA8F !important;
 }
-
 h1 {
     color: #F9AA8F;
     text-align: center;
     font-weight: 300 !important;
 }
-
 hr { width:150px; border-top:5px solid #F9AA8F ; background: #F9AA8F}
 hr.about { width:85%; border-top:3px solid #F9AA8F !important; background: #F9AA8F}
-
 a {
     text-decoration: none !important;
     color: white !important;
 }
-
 .about i{
     pointer-events:none !important;}
-
 i:hover{
     color: #F9AA8F !important;
 }
-
 nav a:hover {
     color: #F9AA8F !important;
 }
-
 .btn:hover{
     box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .navbar-toggler {
     color: #F9AA8F !important;
 }
-
 svg {
     color: #F9AA8F;
 }
-
 @keyframes slideInFromBottom {
     0% {
       transform: translateY(-100%);
@@ -67,15 +55,12 @@ svg {
       transform: translateY(0);
     }
   }
-  
   header {  
     /* This section calls the slideInFromBottom animation we defined above */
     animation: 1s ease-out 0s 1 slideInFromBottom;
     
     background: #43515A;
   }
-
-
 /*Début animation de la div de la page index*/
 .lesTroisCercle{
     width: 100%;
@@ -84,7 +69,6 @@ svg {
     margin-left: 50%;
     margin-right: 50%;
 }
-
 .aboutText .lesTroisCercle span:nth-child(1){
     position: absolute;
     margin: auto;
@@ -157,13 +141,10 @@ svg {
     transition: 0.5s;
     animation: animate 15s linear infinite;
 }
-
 #logo {
     color: #F9AA8F;
     font-size: 100px;
 }
-
-
 @keyframes animate{
     0%
     {
@@ -174,22 +155,16 @@ svg {
          transform: rotate(360deg);
     }
 }
-
-
 @media (max-width: 978px) {
 
     footer span {
         font-size: small;
     }
-
     .card-text p {
         font-size: small;
     }
-
 }
-
 @media (max-width: 320px) {
-
     .card-text p {
         font-size: x-small;
     }
