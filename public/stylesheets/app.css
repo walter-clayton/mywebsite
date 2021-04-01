@@ -19,6 +19,10 @@ Body {
 #enter {
     color: #F9AA8F !important;
 }
+.something{
+    width: 200px;
+    height: 200px;
+}
 h1 {
     color: #F9AA8F;
     text-align: center;
