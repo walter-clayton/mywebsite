@@ -30,4 +30,4 @@ npm start
 
 ## Copyright
 
-<p>&copy; 2020 Walter Clayton, All Rights Reserved<p>
+<p>&copy; 2021 Walter Clayton, All Rights Reserved<p>

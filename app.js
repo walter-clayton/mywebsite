@@ -1,10 +1,20 @@
 
+var path = require("path");
 var express = require("express");
+var http = require("http");
 var app = express();
+var reload = require("reload");
+const { env } = require("process");
+var publicDirectory = path.join(__dirname, "public");
 
+app.set("port", process.env.PORT || 8000)
 app.set("view engine", "ejs");
-app.use(express.static("public"));
-app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use(express.static(publicDirectory));
+
+app.locals.cardData = require('./data/cards.json');
+let cardData = app.locals.cardData
+app.locals.skillData = require('./data/skills.json');
+let skillData = app.locals.cardData
 
 app.get("/", function(req, res){
     res.render("index");
@@ -16,12 +26,12 @@ app.get("/about", function(req, res){
     res.render("about");
 })
 
-// CONNECT TO PORTS
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("SERVER IS RUNNING!");
-});
+var server = http.createServer(app);
 
-var port = process.env.PORT || 8000;
-app.listen(8000, function(){
-	console.log("ready on port " + port);
+reload(app).then(function () {
+    server.listen(app.get("port"), function (){
+        console.log("Web server listening on port" + app.get("port"))
+    });
+}).catch(function (err) {
+    console.log("Reload could not restart, could not refresh/sample app", err)
 });

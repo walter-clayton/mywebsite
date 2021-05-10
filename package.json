@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Walter Clayton Portfolio Website",
   "main": "app.js",
+  "live": "nodemon app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js -e ejs,js,css,html,jpg,png,svg"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,16 @@
   },
   "homepage": "https://github.com/walter-clayton/mywebsite#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.6.0",
+    "connect-livereload": "^0.6.1",
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "material-design-icons": "^3.0.1",
+    "node-localstorage": "^2.1.6"
+  },
+  "devDependencies": {
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.7",
+    "reload": "^3.1.1"
   }
 }
