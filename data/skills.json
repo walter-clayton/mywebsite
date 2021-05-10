@@ -1,0 +1,106 @@
+[
+    [
+        {
+            "name": "javascript",
+            "image": "/images/skills/javascript.svg"
+        },
+        {
+            "name": "python",
+            "image": "/images/skills/python.svg"
+        },
+        {
+            "name": "html",
+            "image": "/images/skills/html.svg"
+        },
+        {
+            "name": "css",
+            "image": "/images/skills/css.svg"
+        },
+        {
+            "name": "git",
+            "image": "/images/skills/git.svg"
+        },
+        {
+            "name": "postgres",
+            "image": "/images/skills/postgres.svg"
+        }
+    ],
+    [
+        {
+            "name": "webpack",
+            "image": "/images/skills/webpack.svg"
+        },
+        {
+            "name": "flask",
+            "image": "/images/skills/flask.svg"
+        },
+        {
+            "name": "django",
+            "image": "/images/skills/django.svg"
+        },
+        {
+            "name": "npm",
+            "image": "/images/skills/npm.svg"
+        },
+        {
+            "name": "buefy",
+            "image": "/images/skills/buefy.svg"
+        },
+        {
+            "name": "php",
+            "image": "/images/skills/php.svg"
+        }
+    ],
+    [
+        {
+            "name": "bootstrap",
+            "image": "/images/skills/bootstrap.svg"
+        },
+        {
+            "name": "vuejs",
+            "image": "/images/skills/vuejs.svg"
+        },
+        {
+            "name": "jinja",
+            "image": "/images/skills/jinja.svg"
+        },
+        {
+            "name": "mysql",
+            "image": "/images/skills/mysql.svg"
+        },
+        {
+            "name": "mongodb",
+            "image": "/images/skills/mongodb.svg"
+        },
+        {
+            "name": "figma",
+            "image": "/images/skills/figma.svg"
+        }
+    ],
+    [
+        {
+            "name": "photoshop",
+            "image": "/images/skills/photoshop.svg"
+        },
+        {
+            "name": "express",
+            "image": "/images/skills/express.svg"
+        },
+        {
+            "name": "nodejs",
+            "image": "/images/skills/nodejs.svg"
+        },
+        {
+            "name": "bulma",
+            "image": "/images/skills/bulma.svg"
+        },
+        {
+            "name": "sass",
+            "image": "/images/skills/sass.svg"
+        },
+        {
+            "name": "docker",
+            "image": "/images/skills/docker.svg"
+        }
+    ]
+]

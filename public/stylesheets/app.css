@@ -1,8 +1,74 @@
-Body {
-    background-color: #43515A; 
+/* MAIN */
+html, body {
+    margin: 0;
+    height: 100%;
 }
-.jumbotron {
+body {
+    background-color: gainsboro !important; 
+}
+/* Tools */
+
+/* Pages */
+.index-page{
+    height: inherit;
+}
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+.vertical-center{
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+/* Colors */
+.background-mud{
     background-color: #43515A !important;
+}
+.color-mud{
+    color: #43515A !important;
+}
+.mud-pink{
+    color:  #F9AA8F !important;
+}
+.bright-65{
+    filter: brightness(65%) ;
+}
+/* Width */
+.w-32{
+    width: 32px;
+}
+.w-inherit{
+    width: inherit;
+}
+.w-100{
+    width: 100%;
+}
+.w-80 {
+    width: 80%;
+}
+/* Margins */
+.m-50{
+    margin-top: 10%;
+}
+/* Borders */
+.border-radius-30{
+    border-radius: 30px !important;
+}
+/* Sizes */
+.height-18{
+    height: 18px;
+}
+.entry{
+    height: inherit;
+}
+/* Displays */
+.d-none{
+    display: none !important;
 }
 #landing-button {
     border-color: #F9AA8F;
@@ -11,10 +77,10 @@ Body {
     background-color: transparent;
     width:150px;
 }
-.card {
-    border-color: #F9AA8F !important;
-    border-width: 1px !important;
-    box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.button-stack{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
 #enter {
     color: #F9AA8F !important;
@@ -59,97 +125,38 @@ svg {
       transform: translateY(0);
     }
   }
-  header {  
+header {  
     /* This section calls the slideInFromBottom animation we defined above */
-    animation: 1s ease-out 0s 1 slideInFromBottom;
-    
+    animation: 1s ease-out 0s 1 slideInFromBottom; 
     background: #43515A;
-  }
+}
 /*Début animation de la div de la page index*/
-.lesTroisCercle{
-    width: 100%;
-    height: 15rem;
+.spin-3s{
+    transition: 0.5s;
+    animation: spin 3s linear ;
+    transform-origin: 50% 50%;
+}
+.spin-4s{
+    transition: 0.5s;
+    animation: spin 4s linear ;
+    transform-origin: 50% 50%;
+}
+.spin-5s{
+    transition: 0.5s;
+    animation: spin 5s linear ;
+    transform-origin: 50% 50%;
+}
+.static {
+    position:absolute;
+    background: white;
+  }
+  .static:hover {
+    opacity:0;
+  }
+.is-relative{
     position: relative;
-    margin-left: 50%;
-    margin-right: 50%;
 }
-.aboutText .lesTroisCercle span:nth-child(1){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 200px;
-    height: 200px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 10s linear infinite;
-}
-.aboutText .lesTroisCercle span:nth-child(2){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 200px;
-    height: 200px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 8s linear infinite;
-}
-.aboutText .lesTroisCercle span:nth-child(3){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 200px;
-    height: 200px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 6s linear infinite;
-}
-.aboutText .lesTroisCercle span:nth-child(2){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 200px;
-    height: 220px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 4s linear infinite;
-}
-.aboutText .lesTroisCercle span:nth-child(3){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 220px;
-    height: 200px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 5s linear infinite;
-}
-.aboutText .lesTroisCercle span:nth-child(4){
-    position: absolute;
-    margin: auto;
-    top: auto;
-    left: auto;
-    width: 220px;
-    height: 215px;
-    border: solid 1.5px #F9AA8F;
-    border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: animate 15s linear infinite;
-}
-#logo {
-    color: #F9AA8F;
-    font-size: 100px;
-}
-@keyframes animate{
+@keyframes spin{
     0%
     {
          transform: rotate(0deg);
@@ -160,7 +167,18 @@ svg {
     }
 }
 @media (max-width: 978px) {
-
+    .cols{
+        padding: 0px !important;
+    }
+    .col-lg-6{
+        padding: 0px !important;
+    }
+    #sitting-guy{
+        width: inherit !important;
+    }
+    .d-sm-none{
+        display: none !important;
+    }
     footer span {
         font-size: small;
     }
@@ -171,5 +189,44 @@ svg {
 @media (max-width: 320px) {
     .card-text p {
         font-size: x-small;
+    }
+}
+.appear-one{
+    animation: halfOpactiy 1s 1 forwards;
+    opacity: 0;
+}
+.appear-two{
+    animation: halfOpactiy 1s 0.5s 1 forwards;
+    opacity: 0;
+}
+.appear-three{
+    animation: halfOpactiy 1s 1s 1 forwards;
+    opacity: 0;
+}
+.appear-four{
+    animation: halfOpactiy 1s 1.5s 1 forwards;
+    opacity: 0;
+}
+.appear-five{
+    animation: halfOpactiy 1s 2s 1 forwards;
+    opacity: 0;
+}
+.screen-writing-scroll{
+    animation: horizontalScroll 5s forwards 1;
+}
+@keyframes horizontalScroll {
+    0% {
+        transform: translate3d(0, 8%, 0);
+    }
+    100% {
+        transform: translate3d(0, -2%, 0);
+    }
+}
+@keyframes halfOpactiy {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
     }
 }
