@@ -24,7 +24,9 @@ app.get("/home", function(req, res){
 app.get("/about", function(req, res){
     res.render("about");
 })
-
+app.get("/api", function(req, res){
+    res.render("apis");
+})
 var server = http.createServer(app);
 
 server.listen(app.get("port"), function (){

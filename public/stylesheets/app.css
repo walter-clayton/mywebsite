@@ -33,7 +33,7 @@ body {
     color: #43515A !important;
 }
 .mud-pink{
-    color:  #F9AA8F !important;
+    color:  #706a68 !important;
 }
 .bright-65{
     filter: brightness(65%) ;
@@ -42,14 +42,17 @@ body {
 .w-32{
     width: 32px;
 }
+.w-68{
+    width: 68px;
+}
 .w-inherit{
     width: inherit;
 }
 .w-100{
     width: 100%;
 }
-.w-80 {
-    width: 80%;
+.w-90 {
+    width: 90%;
 }
 /* Margins */
 .m-50{

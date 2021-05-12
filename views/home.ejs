@@ -253,25 +253,23 @@
     <% cardData[0].forEach(function(item, index){ %>
       <div class="col-md-5 col-lg-6">
         <div class="card mb-4 d-flex row mx-0 bg-white border-radius-30">
-          <div class="w-80 mx-auto pt-5">
-            <img class="bright-65 static w-inherit border-radius-30" src="<%= item.image %>" alt="Card image cap">
-            <img class="w-100 border-radius-30" src="<%= item.gif %>" alt="Card image cap">
+          <div class="d-flex w-90 justify-content-center mx-auto pt-5">
+            <img class="bright-65 w-inherit border-radius-30" src="<%= item.image %>" alt="Card image cap">
           </div>
             <div class="card-body is-relative mx-5 px-5">
               <h3 class="card-title"><%= item.title %></h3>
-              <strong class="d-inline-block mb-2 text-secondary"></strong>
+              <strong class="d-inline-block text-secondary"></strong>
               <p class="card-text"><%= item.description %></p>
-              <button class="my-4 py-2 button-stack"
+              <button class="mb-4 py-2 button-stack"
               data-toggle="collapse"
               href="#stack-<%= index %>"
               role="button"
-              aria-expanded="false" 
-              onclick="toggle(this)">
+              aria-expanded="false">
                 Stack
                 <i class="fas fa-chevron-right"></i>
                 <i class="fas fa-chevron-down" hidden></i>
               </button>
-              <ul class="collape py-2" id="stack-<%= index %>">
+              <ul class="collapse py-2" id="stack-<%= index %>">
                 <% for (let i = 0; i < item.stack.length; i ++) { %>
                   <li class="card-text"><%= item.stack[i].name %></li>
                   <% } %>
@@ -283,40 +281,38 @@
           </div>
         </div>
       </div>
-      <% }); %>
-      <% cardData[1].forEach(function(item, index){ %>
-        <div class="col-md-5 col-lg-6">
-          <div class="card mb-4 d-flex row mx-0 bg-white border-radius-30">
-            <div class="w-80 mx-auto pt-5">
-              <img class="bright-65 static w-inherit border-radius-30" src="<%= item.image %>" alt="Card image cap">
-              <img class="w-100 border-radius-30" src="<%= item.gif %>" alt="Card image cap">
-            </div>
-              <div class="card-body is-relative mx-5 px-5">
-                <h3 class="card-title"><%= item.title %></h3>
-                <strong class="d-inline-block mb-2 text-secondary"></strong>
-                <p class="card-text"><%= item.description %></p>
-                <button class="my-4 py-2 button-stack"
-                data-toggle="collapse"
-                href="#stack-<%= index %>"
-                role="button"
-                aria-expanded="false" 
-                onclick="toggle(this)">
-                  Stack
-                  <i class="fas fa-chevron-right"></i>
-                  <i class="fas fa-chevron-down" hidden></i>
-                </button>
-                <ul class="collape py-2" id="stack-<%= index %>">
-                  <% for (let i = 0; i < item.stack.length; i ++) { %>
-                    <li class="card-text"><%= item.stack[i].name %></li>
-                    <% } %>
-                </ul>
-              <div class="d-flex justify-content-between">
-                <a href="<%= item.demo %>" class="btn btn-secondary btn-block mr-5 border-radius-30 background-mud" target="_blank">Demo</a>
-                <a href="<%= item.github %>" target="_blank"><i class="ml-0 fa-align-right fab fa-github fa-2x color-mud"></i></a>
-              </div>
+    <% }); %>
+    <% cardData[1].forEach(function(item, index){ %>
+      <div class="col-md-5 col-lg-6">
+        <div class="card mb-4 d-flex row mx-0 bg-white border-radius-30">
+          <div class="d-flex w-90 justify-content-center mx-auto pt-5">
+            <img class="bright-65 w-inherit border-radius-30" src="<%= item.image %>" alt="Card image cap">
+          </div>
+            <div class="card-body is-relative mx-5 px-5">
+              <h3 class="card-title"><%= item.title %></h3>
+              <strong class="d-inline-block text-secondary"></strong>
+              <p class="card-text"><%= item.description %></p>
+              <button class="mb-4 py-2 button-stack"
+              data-toggle="collapse"
+              href="#stack-<%= index %>"
+              role="button"
+              aria-expanded="false">
+                Stack
+                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-down" hidden></i>
+              </button>
+              <ul class="collapse py-2" id="stack-<%= index %>">
+                <% for (let i = 0; i < item.stack.length; i ++) { %>
+                  <li class="card-text"><%= item.stack[i].name %></li>
+                  <% } %>
+              </ul>
+            <div class="d-flex justify-content-between">
+              <a href="<%= item.demo %>" class="btn btn-secondary btn-block mr-5 border-radius-30 background-mud" target="_blank">Demo</a>
+              <a href="<%= item.github %>" target="_blank"><i class="ml-0 fa-align-right fab fa-github fa-2x color-mud"></i></a>
             </div>
           </div>
         </div>
-      <% }); %>
+      </div>
+    <% }); %>
 </div>
 <%- include ('partials/footer') %>
