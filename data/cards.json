@@ -1,275 +1,105 @@
 [
-     [
-
         {
             "title": "My Website",
-            "type": "Website",
-            "image": "/images/my_website.png",
-            "gif": "/images/my_website.gif",
             "description": "Website built to demonstrate my skills.",
-            "stack": [
-                {
-                    "name": "Node.js"
-                },
-                {
-                    "name": "Bootstrap"
-                },
-                {
-                    "name": "EJS"
-                },
-                {
-                    "name": "Express"
-                },
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Figma"
-                },
-                {
-                    "name": "Adobe PhotoShop"
-                },
-                {
-                    "name": "CSS"
-                },
-                {
-                    "name": "HTML"
-                }
-            ],
             "demo": "#",
-            "github": "https://github.com/walter-clayton/mywebsite"
-    
+            "github": "https://github.com/walter-clayton/mywebsite", 
+            "tags": ["WebDeveloper", "Javascript", "Design"]
+        },
+        {
+            "title": "Afitpilot",
+            "description": "Web App that allows people to measure their somatotypes and create an avatar that represents their body type.",
+            "demo": "https://www.afitpilot.com/",
+            "github": "https://github.com/walter-clayton/afitpilot-somatotype",
+            "tags": ["React", "Typescript", "SportScience"]
+        },
+        {
+            "title": "ESMA",
+            "description": "Corporate Website built to enable administrators to manage clients and content.",
+            "demo": "https://www.esma.europa.eu/",
+            "github": "", 
+            "tags": ["Business", "Analyst", "Drupal"]
+        },
+        {
+            "title": "ERC",
+            "description": "Corporate Website built to enable administrators to manage clients and content.",
+            "demo": "https://erc.europa.eu/homepage",
+            "github": "", 
+            "tags": ["Business", "Analyst", "Drupal"]
+        },
+        {
+            "title": "EBA",
+            "description": "Corporate Website built to enable administrators to manage clients and content.",
+            "demo": "https://www.eba.europa.eu/",
+            "github": "", 
+            "tags": ["Business", "Analyst", "Drupal"]
+        },
+        {
+            "title": "League Of Nations",
+            "description": "Ecommerce Website built to upsell information to readers.",
+            "demo": "https://leagueofnations.co.uk/",
+            "github": "", 
+            "tags": ["Algorithm", "Wordpress", "Ecommerce"]
         },
         {
             "title": "Finlight",
-            "type": "Website",
-            "image": "/images/finlight.png",
-            "gif": "/images/finlight.gif",
-            "description": "Website selling asset management as a SASS for Family offices.",
-            "stack": [
-                {
-                    "name": "Flask"
-                },
-                {
-                    "name": "Jinja"
-                },
-                {
-                    "name": "Bulma"
-                },
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Python"
-                },
-                {
-                    "name": "SQLAlchemy"
-                },
-                {
-                    "name": "MySQL"
-                },
-                {
-                    "name": "Hubspot"
-                },
-                {
-                    "name": "NLP (PyPDF2, Tesseract)"
-                }
-            ],
+            "description": "Web App selling asset management as a SASS for Family offices.",
             "demo": "https://www.finlight.com/",
-            "github": ""
-    
-        },
-        {
-            "title": "Finlight",
-            "type": "Web App",
-            "image": "/images/finlight_app.png",
-            "gif": "/images/finlight_app.gif",
-            "description": "Web app that allows users to process financial documents and manage portfolios. ",
-            "stack": [
-                {
-                    "name": "Django"
-                },
-                {
-                    "name": "Buefy"
-                },
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Python"
-                },
-                {
-                    "name": "Vuejs"
-                },
-                {
-                    "name": "MySQL"
-                },
-                {
-                    "name": "SCSS"
-                },
-                {
-                    "name": "Webpack"
-                }
-                
-            ],
-            "demo": "https://app.finlight.com/accounts/login/",
-            "github": ""
-    
+            "github": "",
+            "tags": ["FinTech", "Vuejs", "Figma"]
         },
         {
             "title": "Somatotype",
-            "type": "Web page",
-            "image": "/images/somatotype.png",
-            "gif": "/images/somatotype.gif",
-            "description": "This is a page that allows users to calculate their somatotype. Users put in their measurements, and the canvas outputs their results on the graph.",
-            "stack": [
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Canvas"
-                }
-            ],
+            "description": "Users can calculate their somatotype and see their results on the graph.",
             "demo": "https://walter-clayton.github.io/somatotype/",
-            "github": "https://github.com/walter-clayton/somatotype"
-    
+            "github": "https://github.com/walter-clayton/somatotype",
+            "tags": ["Canvas", "Equation", "Javascript"]
         },
         {
             "title": "Ecohoods",
-            "type": "Hackathon",
-            "image": "/images/ecohoods.png",
-            "gif": "/images/ecohoods.gif",
-            "description": "Ecohoods is a platform that allows users to see how much money they have saved from using eco smart devices.",
-            "stack": [
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Bootstrap"
-                }
-            ],
+            "description": "Visual Prototype for users to see how much money they have saved from using eco smart devices.",
             "demo": "https://walter-clayton.github.io/ecohoods/dashboard.html",
-            "github": "https://github.com/walter-clayton/ecohoods"
+            "github": "https://github.com/walter-clayton/ecohoods",
+            "tags": ["Hackathon", "IBM", "Ideas"]
     
-        }
-    ],
-    [
+        },
         {
             "title": "YelpCamp",
-            "type": "Hybrid App",
-            "image": "images/yelpcamp.png",
-            "gif": "images/yelpcamp.gif",
-            "description": "This is a web app that allows users to share campgrounds from all over the world.",
-            "stack": [
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "MongoDB"
-                },
-                {
-                    "name": "EJS"
-                },
-                {
-                    "name": "Express"
-                },
-                {
-                    "name": "Bootstrap"
-                }
-            ],
+            "description": "Web App that allows users to share campgrounds from all over the world.",
             "demo": "https://agile-escarpment-38232.herokuapp.com/",
-            "github": "https://github.com/walter-clayton/yelpcamp"
+            "github": "https://github.com/walter-clayton/yelpcamp",
+            "tags": ["Express", "Javascript", "MongoDB"]
     
         },
         {
             "title": "GetFlix",
-            "type": "Desktop App",
-            "image": "images/getflix.png",
-            "gif": "images/getflix.gif",
-            "description": "Netflix type of web app.",
-            "stack": [            
-                {
-                    "name": "MySQL"
-                },
-                {
-                    "name": "Bootstrap"
-                },
-                {
-                    "name": "WAMP"
-                },
-                {
-                    "name": "PHP"
-                }
-            ],
+            "description": "Prototype of a Netflix type of web app.",
             "demo": "",
-            "github": "https://github.com/walter-clayton/getflix"
+            "github": "https://github.com/walter-clayton/getflix",
+            "tags": ["Prototype", "PHP", "MAMP"]
     
         },
         {
             "title": "Loulou Clicker",
-            "type": "Game",
-            "image": "images/loulou.png",
-            "gif": "images/loulou.gif",
-            "description": "This is a Cookie Clicker type game.The concept was to click the cookie (i.e. loulou head) and gain as many points as possible.",
-            "stack": [
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Adobe PhotoShop"
-                }
-            ],
+            "description": "This is a Cookie Clicker game.",
             "demo": "https://github.com/walter-clayton/cookieClicker",
-            "github": "https://walter-clayton.github.io/cookieClicker/"
+            "github": "https://walter-clayton.github.io/cookieClicker/",
+            "tags": ["Prototype", "Coding", "Javascript"]
     
         },
         {
-            "title": "Django Blog",
-            "type": "Hybrid App",
-            "image": "images/djangoblog.png",
-            "gif": "images/djangoblog.gif",
-            "description": "",
-            "stack": [
-                {
-                    "name": "Django"
-                },
-                {
-                    "name": "SQLAlchemy"
-                },
-                {
-                    "name": "Jinja"
-                },
-                {
-                    "name": "Bootstrap"
-                }
-            ],
+            "title": "Blogging",
+            "description": "Prototype built for blogging",
             "demo": "https://stark-taiga-57830.herokuapp.com",
-            "github": "https://github.com/walter-clayton/django_project"
+            "github": "https://github.com/walter-clayton/django_project",
+            "tags": ["Django", "Coding", "Prototype"]
     
         },
         {
-            "title": "Flask Blog",
-            "type": "Hybrid App",
-            "image": "images/flaskblog.png",
-            "gif": "images/flaskblog.gif",
-            "description": "",
-            "stack": [
-                {
-                    "name": "Flask"
-                },
-                {
-                    "name": "SQLAlchemy"
-                },
-                {
-                    "name": "Jinja"
-                },
-                {
-                    "name": "Bootstrap"
-                }
-            ],
+            "title": "Blogging",
+            "description": "Prototype built for blogging",
             "demo": "https://afitpilot-stage.herokuapp.com/home",
-            "github": "https://github.com/walter-clayton/buc-rugby"
-    
+            "github": "https://github.com/walter-clayton/buc-rugby",
+            "tags": ["Flask", "Coding", "Prototype"]
         }
-    ]
 ]

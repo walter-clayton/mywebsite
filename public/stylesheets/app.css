@@ -1,10 +1,15 @@
-/* MAIN */
+/*
+Theme Name: Walter Clayton Theme
+Author: Walter Clayton
+Version: 2.00
+*/
+
 html, body {
     margin: 0;
     height: 100%;
 }
 body {
-    background-color: gainsboro !important; 
+    background-color: #E7E7E7 !important; 
 }
 /* Tools */
 
@@ -27,10 +32,13 @@ body {
 }
 /* Colors */
 .background-mud{
-    background-color: #43515A !important;
+    background-color: #507A95 !important;
 }
 .color-mud{
-    color: #43515A !important;
+    color: #507A95 !important;
+}
+.color-grey{
+    color: #D9D9D9 !important;
 }
 .mud-pink{
     color:  #F9AA8F !important;
@@ -89,11 +97,6 @@ body {
     width: 200px;
     height: 200px;
 }
-h1 {
-    color: #F9AA8F;
-    text-align: center;
-    font-weight: 300 !important;
-}
 hr { width:150px; border-top:5px solid #F9AA8F ; background: #F9AA8F}
 hr.about { width:85%; border-top:3px solid #F9AA8F !important; background: #F9AA8F}
 a {
@@ -102,14 +105,15 @@ a {
 }
 .about i{
     pointer-events:none !important;}
-i:hover{
-    color: #F9AA8F !important;
+a i:hover{
+    color: #507A95 !important;
 }
 nav a:hover {
     color: #F9AA8F !important;
 }
 .btn:hover{
-    box-shadow: 0 4px 8px 0 #F9AA8F, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #F9AA8F !important;
+    border-color: #507A95 !important;
 }
 .navbar-toggler {
     color: #F9AA8F !important;
@@ -128,7 +132,10 @@ svg {
 header {  
     /* This section calls the slideInFromBottom animation we defined above */
     animation: 1s ease-out 0s 1 slideInFromBottom; 
-    background: #43515A;
+    background: #507A95;
+}
+.card{
+    height: 250px !important;
 }
 /*Début animation de la div de la page index*/
 .spin-3s{
@@ -166,7 +173,7 @@ header {
          transform: rotate(360deg);
     }
 }
-@media (max-width: 978px) {
+@media (max-width: 992px) {
     .cols{
         padding: 0px !important;
     }
@@ -174,7 +181,7 @@ header {
         padding: 0px !important;
     }
     #sitting-guy{
-        width: inherit !important;
+        width: -webkit-fill-available;
     }
     .d-sm-none{
         display: none !important;
@@ -186,7 +193,12 @@ header {
         font-size: small;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    .border-radius-30-sm{
+        border-radius: 0px !important;
+    }
     .card-text p {
         font-size: x-small;
     }
