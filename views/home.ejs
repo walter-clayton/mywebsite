@@ -265,11 +265,15 @@
           </div>
           <div class="pt-2 d-flex justify-content-end card-bottom">
             <% if (item.github === "") { %>
-            <i class="color-mud me-3 fa-align-right fab fa-github fa-2x"></i>
+            <i class="d-none me-3 fa-align-right fab fa-github fa-2x"></i>
             <% } else { %>
               <a href="<%= item.github %>" target="_blank"><i class="mud-pink me-3 fa-align-right fab fa-github fa-2x color-mud"></i></a>
             <% } %>
+            <% if (item.demo === "") { %>
             <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
+            <% } else { %>
+              <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
+            <% } %>
           </div>
         </div>
       </div>
