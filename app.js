@@ -1,4 +1,3 @@
-
 var path = require("path");
 var express = require("express");
 var http = require("http");
@@ -27,6 +26,7 @@ app.get("/about", function(req, res){
 app.get("/api", function(req, res){
     res.render("apis");
 })
+
 var server = http.createServer(app);
 
 server.listen(app.get("port"), function (){

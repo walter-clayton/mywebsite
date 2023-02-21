@@ -19,10 +19,11 @@
   },
   "homepage": "https://github.com/walter-clayton/mywebsite#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "connect-livereload": "^0.6.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "jquery": "^3.6.0",
     "material-design-icons": "^3.0.1",
     "node-localstorage": "^2.1.6"
   },
