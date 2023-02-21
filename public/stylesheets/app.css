@@ -46,6 +46,9 @@ body {
 .bright-65{
     filter: brightness(65%) ;
 }
+.border-secondary{
+    border-color: #6C757D;
+}
 /* Width */
 .w-32{
     width: 32px;
