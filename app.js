@@ -11,20 +11,14 @@ app.use(express.static(publicDirectory));
 
 app.locals.cardData = require('./data/cards.json');
 let cardData = app.locals.cardData
-app.locals.skillData = require('./data/skills.json');
-let skillData = app.locals.cardData
+app.locals.reviewData = require('./data/reviews.json');
+let reviewData = app.locals.reviewData
 
 app.get("/", function(req, res){
-    res.render("index");
-})
-app.get("/home", function(req, res){
     res.render("home");
 })
 app.get("/about", function(req, res){
     res.render("about");
-})
-app.get("/api", function(req, res){
-    res.render("apis");
 })
 
 var server = http.createServer(app);
