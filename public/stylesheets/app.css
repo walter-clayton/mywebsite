@@ -1,22 +1,17 @@
-/*
-Theme Name: Walter Clayton Theme
-Author: Walter Clayton
-Version: 2.00
-*/
-
 html, body {
+    position: relative;
     margin: 0;
-    height: 100%;
+    min-height: 100%;
+    margin: auto;
 }
 body {
     background-color: #E7E7E7 !important; 
 }
-/* Tools */
-
-/* Pages */
-.index-page{
-    height: inherit;
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+ line-height: 1.5 !important;
 }
+/* Tools */
+/* Pages */
 .center-screen {
     display: flex;
     flex-direction: column;
@@ -34,8 +29,17 @@ body {
 .background-mud{
     background-color: #507A95 !important;
 }
+.background-pink{
+    background-color: #FECBB8 !important;
+}
+.background-white{
+    background-color:white !important;
+}
 .color-mud{
     color: #507A95 !important;
+}
+.color-dark-mud{
+    color: #43515A !important;
 }
 .color-grey{
     color: #D9D9D9 !important;
@@ -48,6 +52,10 @@ body {
 }
 .border-secondary{
     border-color: #6C757D;
+}
+/* Height */
+.h-300 {
+    height: 300px;
 }
 /* Width */
 .w-32{
@@ -62,9 +70,15 @@ body {
 .w-80 {
     width: 80%;
 }
+.w-fit-content{
+    width: fit-content;
+}
 /* Margins */
 .m-50{
     margin-top: 10%;
+}
+.mt-n1{
+    margin-top: -0.25rem;
 }
 /* Borders */
 .border-radius-30{
@@ -96,18 +110,15 @@ body {
 #enter {
     color: #F9AA8F !important;
 }
-.something{
+.image-standard{
     width: 200px;
     height: 200px;
 }
 hr { width:150px; border-top:5px solid #F9AA8F ; background: #F9AA8F}
-hr.about { width:85%; border-top:3px solid #F9AA8F !important; background: #F9AA8F}
 a {
     text-decoration: none !important;
     color: white !important;
 }
-.about i{
-    pointer-events:none !important;}
 a i:hover{
     color: #507A95 !important;
 }
@@ -115,7 +126,11 @@ nav a:hover {
     color: #F9AA8F !important;
 }
 .btn:hover{
-    color: #F9AA8F !important;
+    font-weight: bold !important;
+    border-color: #507A95 !important;
+}
+.btn:active{
+    font-weight: bold !important;
     border-color: #507A95 !important;
 }
 .navbar-toggler {
@@ -123,6 +138,15 @@ nav a:hover {
 }
 svg {
     color: #F9AA8F;
+}
+.navbar-brand img {
+    height: inherit  !important;
+}
+.navbar-brand {
+    height: inherit !important;
+}
+.navbar {
+    margin-bottom: 0 !important;
 }
 @keyframes slideInFromBottom {
     0% {
@@ -133,38 +157,10 @@ svg {
     }
   }
 header {  
-    /* This section calls the slideInFromBottom animation we defined above */
-    animation: 1s ease-out 0s 1 slideInFromBottom; 
     background: #507A95;
 }
 .card{
     height: 250px !important;
-}
-/*Début animation de la div de la page index*/
-.spin-3s{
-    transition: 0.5s;
-    animation: spin 3s linear ;
-    transform-origin: 50% 50%;
-}
-.spin-4s{
-    transition: 0.5s;
-    animation: spin 4s linear ;
-    transform-origin: 50% 50%;
-}
-.spin-5s{
-    transition: 0.5s;
-    animation: spin 5s linear ;
-    transform-origin: 50% 50%;
-}
-.static {
-    position:absolute;
-    background: white;
-  }
-  .static:hover {
-    opacity:0;
-  }
-.is-relative{
-    position: relative;
 }
 @keyframes spin{
     0%
@@ -174,6 +170,26 @@ header {
     100%
     {
          transform: rotate(360deg);
+    }
+}
+@media (min-width: 993px) {
+    .w-750 {
+        width: 750px;
+    }
+    .w-max-lg-400{
+        max-width: 400px !important;
+    }
+}
+@media (min-width: 769px) {
+    .w-md-750 {
+        width: 750px;
+    }
+    .image-large{
+        width: 300px;
+        height: 300px;
+    }
+    .h-md-200{
+        height: 200px;
     }
 }
 @media (max-width: 992px) {
@@ -195,8 +211,21 @@ header {
     .card-text p {
         font-size: small;
     }
+    .mx-auto-md-only {
+        margin: auto;
+    }
 }
 @media (max-width: 768px) {
+    .h-sm-300{
+        height: 300px;
+    }
+    .mx-auto-sm-only {
+        margin: auto;
+    }
+    .image-sm-standard{
+        width: 200px;
+        height: 200px;
+    }
 }
 @media (max-width: 576px) {
     .border-radius-30-sm{
@@ -204,6 +233,9 @@ header {
     }
     .card-text p {
         font-size: x-small;
+    }
+    .mx-auto-xs-only {
+        margin: auto;
     }
 }
 .appear-one{

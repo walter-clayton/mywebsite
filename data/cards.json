@@ -1,105 +1,100 @@
 [
-        {
-            "title": "My Website",
-            "description": "Website built to demonstrate my skills.",
-            "demo": "#",
-            "github": "https://github.com/walter-clayton/mywebsite", 
-            "tags": ["WebDeveloper", "Javascript", "Design"]
-        },
-        {
-            "title": "Afitpilot",
-            "description": "Web App that allows people to measure their somatotypes and create an avatar that represents their body type.",
-            "demo": "https://www.afitpilot.com/",
-            "github": "https://github.com/walter-clayton/afitpilot-somatotype",
-            "tags": ["React", "Typescript", "SportScience"]
-        },
-        {
-            "title": "ESMA",
-            "description": "Corporate Website built to enable administrators to manage clients and content.",
-            "demo": "https://www.esma.europa.eu/",
-            "github": "", 
-            "tags": ["Business", "Analyst", "Drupal"]
-        },
-        {
-            "title": "ERC",
-            "description": "Corporate Website built to enable administrators to manage clients and content.",
-            "demo": "https://erc.europa.eu/homepage",
-            "github": "", 
-            "tags": ["Business", "Analyst", "Drupal"]
-        },
-        {
-            "title": "EBA",
-            "description": "Corporate Website built to enable administrators to manage clients and content.",
-            "demo": "https://www.eba.europa.eu/",
-            "github": "", 
-            "tags": ["Business", "Analyst", "Drupal"]
-        },
-        {
-            "title": "League Of Nations",
-            "description": "Ecommerce Website built to upsell information to readers.",
-            "demo": "https://leagueofnations.co.uk/",
-            "github": "", 
-            "tags": ["Algorithm", "Wordpress", "Ecommerce"]
-        },
-        {
-            "title": "Finlight",
-            "description": "Web App selling asset management as a SASS for Family offices.",
-            "demo": "https://www.finlight.com/",
-            "github": "",
-            "tags": ["FinTech", "Vuejs", "Figma"]
-        },
-        {
-            "title": "Somatotype",
-            "description": "Users can calculate their somatotype and see their results on the graph.",
-            "demo": "https://walter-clayton.github.io/somatotype/",
-            "github": "https://github.com/walter-clayton/somatotype",
-            "tags": ["Canvas", "Equation", "Javascript"]
-        },
-        {
-            "title": "Ecohoods",
-            "description": "Visual Prototype for users to see how much money they have saved from using eco smart devices.",
-            "demo": "https://walter-clayton.github.io/ecohoods/dashboard.html",
-            "github": "https://github.com/walter-clayton/ecohoods",
-            "tags": ["Hackathon", "IBM", "Ideas"]
-    
-        },
-        {
-            "title": "YelpCamp",
-            "description": "Web App that allows users to share campgrounds from all over the world.",
-            "demo": "https://agile-escarpment-38232.herokuapp.com/",
-            "github": "https://github.com/walter-clayton/yelpcamp",
-            "tags": ["Express", "Javascript", "MongoDB"]
-    
-        },
-        {
-            "title": "GetFlix",
-            "description": "Prototype of a Netflix type of web app.",
-            "demo": "",
-            "github": "https://github.com/walter-clayton/getflix",
-            "tags": ["Prototype", "PHP", "MAMP"]
-    
-        },
-        {
-            "title": "Loulou Clicker",
-            "description": "This is a Cookie Clicker game.",
-            "demo": "https://github.com/walter-clayton/cookieClicker",
-            "github": "https://walter-clayton.github.io/cookieClicker/",
-            "tags": ["Prototype", "Coding", "Javascript"]
-    
-        },
-        {
-            "title": "Blogging",
-            "description": "Prototype built for blogging",
-            "demo": "https://stark-taiga-57830.herokuapp.com",
-            "github": "https://github.com/walter-clayton/django_project",
-            "tags": ["Django", "Coding", "Prototype"]
-    
-        },
-        {
-            "title": "Blogging",
-            "description": "Prototype built for blogging",
-            "demo": "https://afitpilot-stage.herokuapp.com/home",
-            "github": "https://github.com/walter-clayton/buc-rugby",
-            "tags": ["Flask", "Coding", "Prototype"]
-        }
+  {
+    "title": "My Website",
+    "description": "Website built to demonstrate my skills.",
+    "demo": "#",
+    "github": "https://github.com/walter-clayton/mywebsite",
+    "tags": ["WebDeveloper", "Javascript", "Design"]
+  },
+  {
+    "title": "Afitpilot",
+    "description": "Web App that measures people's somatotypes and creates an avatar that represents their body type.",
+    "demo": "https://www.afitpilot.com/",
+    "github": "https://github.com/walter-clayton/afitpilot-somatotype",
+    "tags": ["React", "Typescript", "SportScience"]
+  },
+  {
+    "title": "ESMA",
+    "description": "European Website built to enable administrators to manage clients and content.",
+    "demo": "https://www.esma.europa.eu/",
+    "github": "",
+    "tags": ["Business", "Analyst", "Drupal"]
+  },
+  {
+    "title": "ERC",
+    "description": "European Website built to enable administrators to manage clients and content.",
+    "demo": "https://erc.europa.eu/homepage",
+    "github": "",
+    "tags": ["Business", "Analyst", "Drupal"]
+  },
+  {
+    "title": "EBA",
+    "description": "European Website built to enable administrators to manage clients and content.",
+    "demo": "https://www.eba.europa.eu/",
+    "github": "",
+    "tags": ["Business", "Analyst", "Drupal"]
+  },
+  {
+    "title": "League Of Nations",
+    "description": "Ecommerce Website built to upsell information to readers.",
+    "demo": "https://leagueofnations.co.uk/",
+    "github": "",
+    "tags": ["Algorithm", "Wordpress", "Ecommerce"]
+  },
+  {
+    "title": "Finlight",
+    "description": "Web App selling asset management as a SASS for Family offices.",
+    "demo": "https://www.finlight.com/",
+    "github": "",
+    "tags": ["FinTech", "Vuejs", "Figma"]
+  },
+  {
+    "title": "Somatotype",
+    "description": "Web Page that calculates people's somatotype and they can see their results on the graph.",
+    "demo": "https://walter-clayton.github.io/somatotype/",
+    "github": "https://github.com/walter-clayton/somatotype",
+    "tags": ["Canvas", "Equation", "Javascript"]
+  },
+  {
+    "title": "Ecohoods",
+    "description": "Visual Prototype for users to see how much money they have saved from using eco smart devices.",
+    "demo": "https://walter-clayton.github.io/ecohoods/dashboard.html",
+    "github": "https://github.com/walter-clayton/ecohoods",
+    "tags": ["Hackathon", "IBM", "Ideas"]
+  },
+  {
+    "title": "YelpCamp",
+    "description": "Web App that allows users to share campgrounds from all over the world.",
+    "demo": "",
+    "github": "https://github.com/walter-clayton/yelpcamp",
+    "tags": ["Express", "Javascript", "MongoDB"]
+  },
+  {
+    "title": "GetFlix",
+    "description": "Prototype of a Netflix type of web app.",
+    "demo": "",
+    "github": "https://github.com/walter-clayton/getflix",
+    "tags": ["Prototype", "PHP", "MAMP"]
+  },
+  {
+    "title": "Loulou Clicker",
+    "description": "This is a Cookie Clicker game.",
+    "demo": "https://github.com/walter-clayton/cookieClicker",
+    "github": "https://walter-clayton.github.io/cookieClicker/",
+    "tags": ["Prototype", "Coding", "Javascript"]
+  },
+  {
+    "title": "Blogging",
+    "description": "Prototype built for blogging",
+    "demo": "",
+    "github": "https://github.com/walter-clayton/django_project",
+    "tags": ["Django", "Coding", "Prototype"]
+  },
+  {
+    "title": "Blogging",
+    "description": "Prototype built for blogging",
+    "demo": "",
+    "github": "https://github.com/walter-clayton/buc-rugby",
+    "tags": ["Flask", "Coding", "Prototype"]
+  }
 ]

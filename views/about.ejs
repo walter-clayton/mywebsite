@@ -1,65 +1,69 @@
 <%- include ('partials/header') %>
 <%- include ('partials/navbar') %>
-<!--Début de la section About-->
-<div class="container my-5 about d-flex flex-column" id="about">
-    <img src="images/profile_pic_mixed.png" class="rounded mx-auto d-block something" alt="walter clayton profile picture">
-    <a class="btn background-mud mx-auto" href="/documents/cv.pdf" download>Download CV</a>
-    <section class="mx-auto pt-5">
-            <p class="text-center">
-                <span>Sport and excercise scientist,</span>
-                <span>and self-taught software engineer.</span>
-            </p>
-            <!-- <div class="d-flex justify-content-between">
-                <span class="material-icons md-18">favorite</span>
-                <span class="material-icons md-18">fitness_center</span>
-                <span class="material-icons md-18">biotech</span>
-                <span class="material-icons md-18">psychology</span> 
-                <span class="material-icons md-18">developer_mode</span>
-                <span class="material-icons md-18">lightbulb</span>
-            </div> -->
-    </section>
-    <section class="mx-auto">
-        <h4 class="h4 text-center">SKILLS</h4>
-        <p class="text-center">
-            <span>Frontend at heart</span>
-            <span>with keen interests in UI and UX design.</span><br>
-            <span>Digs into backend tools when required.</span>
-        </p>
-            <div class="d-flex justify-content-between flex-column">
-                <div class="d-sm-none">
-                    <div class="d-flex">
-                        <% skillData[0].forEach(function(item, index){ %>               
-                            <img src="<%= item.image %>" class="height-18 w-32 m-5" alt="<%= item.name %>" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                        <% }) %>
-                    </div>
-                    <div class="d-flex">
-                        <% skillData[1].forEach(function(item, index){ %>               
-                            <img src="<%= item.image %>" class="height-18 w-32 m-5" alt="<%= item.name %>" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                        <% }) %>
-                    </div>
-                    <div class="d-flex">
-                        <% skillData[2].forEach(function(item, index){ %>               
-                            <img src="<%= item.image %>" class="height-18 w-32 m-5" alt="<%= item.name %>" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                        <% }) %>
-                    </div>
-                    <div class="d-flex">
-                        <% skillData[3].forEach(function(item, index){ %>               
-                            <img src="<%= item.image %>" class="height-18 w-32 m-5" alt="<%= item.name %>" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                        <% }) %>
-                    </div>
+<div class="d-flex flex-column background-pink">
+    <div class="w-md-750 mx-auto">
+        <div class="p-5 row">
+            <div class="align-self-center col-md-7 col-12 order-2 order-md-1">
+                <div class="d-flex flex-column">
+                    <h1 class="h1 text-center text-md-start text-black">Walter Clayton</h1>
+                    <p class="h5 text-center text-md-start  text-black">Turning abstract ideas into clean and simple solutions.</p>
+                    <a class="my-3 btn text-center background-mud mx-auto-sm-only w-fit-content" href="/documents/cv.pdf" download>Download CV</a>
                 </div>
             </div>
-    </section>
-    <section class="mx-auto">
-        <h4 class="h4 text-center">Favorite quotes</h4>
-        <div class="text-center">
-            <p class="text-center">
-                <span class="text-center">“Rule of thumb for UX: More options, more problems.”</span>
-            </p>
-            <p class="text-center">
-                <span class="text-center"> "Do the minimum to get your foot just over the line."</span>
-            </p>
+            <div class="align-self-center col-md-5 col-12 order-1 order-md-2">
+                <img src="images/profile.png" class="rounded mx-auto d-block image-sm-standard image-large" alt="walter clayton profile picture">
+            </div>
         </div>
-    </section>
+    </div>
 </div>
+<img src="images/purple-blue-rectangle.svg" class="w-100 mt-n1" alt="section 1 about">
+<div class="d-flex flex-column background-mud mt-n1">
+    <div class="w-md-750 mx-auto">
+        <div class="p-5 row ">
+            <div class="align-self-center col-md-6 col-12 order-2">
+                <div class="d-flex flex-column">
+                    <h4 class="h4 text-center text-md-start text-white">“Simplicity is complexity resolved”</h4>
+                    <hr class="mx-auto-sm-only my-2">
+                    <p class="text-center text-md-start text-white">Constantin Brancusi</p>
+                </div>
+            </div>
+            <div class="align-self-center col-md-6 col-12 order-1">
+                <img src="images/brancusi.png" class="rounded mx-auto-sm-only w-fit-content d-block image-sm-standard image-large" alt="walter clayton profile picture">
+            </div>
+        </div>
+    </div>
+</div>
+<img src="images/mud-white-rectangle.svg" class="w-100 mt-n1" alt="section 1 about">
+<div class="d-flex flex-column background-white mt-n1">
+    <div class="w-md-750 mx-auto">
+        <div class="p-5 row ">
+            <div class="align-self-center col-12 order-1">
+                <div class="d-flex flex-column">
+                    <div class="review h-md-200 h-sm-300">
+                        <h2 class="h1 text-center text-md-start text-black">Reviews</h2>
+                        <% reviewData.forEach(function(item, index){ %>
+                            <div class="review__items my-5">
+                                <p class="h5 text-center text-md-start text-black">"<%= item.review %>"</p>
+                                <hr class="mx-auto-sm-only my-2 border-secondary">
+                                <p class="text-center text-md-start text-black"><%= item.author %></p>
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div class="my-5 mx-auto-sm-only">
+                        <button type="button" class="btn background-white border-secondary" onclick="previousReview()">
+                            PREV
+                        </button>
+                        <button type="button" class="btn background-white border-secondary" onclick="nextReview()">
+                            NEXT
+                        </button>
+                    </div>
+                    <script>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="images/white-transparent-rectangle.svg" class="w-100 mt-n1" alt="section 1 about">
+
 <%- include ('partials/footer') %>
