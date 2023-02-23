@@ -179,6 +179,9 @@ header {
     .w-max-lg-400{
         max-width: 400px !important;
     }
+    .h-lg-140{
+        height: 140px;
+    }
 }
 @media (min-width: 769px) {
     .w-md-750 {
