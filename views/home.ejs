@@ -254,25 +254,26 @@
   <div class="row p-4 d-flex justify-content-around cols">
     <% cardData.forEach(function(item, index){ %>
       <div class="col-12 col-lg-6">
-        <div class="card p-5 mb-4 d-flex row mx-0 bg-white border-radius-30">
-          <div class="card-body text-start w-80 is-relative">
-              <h3 class="card-title "><%= item.title %></h3>
-              <strong class="d-inline-block text-secondary"></strong>
-              <p class="card-text"><%= item.description %></p>
+        <div class="p-5 mb-4 d-flex row mx-0 bg-white border-radius-30">
+          <div class="h-lg-140 text-start w-80 is-relative">
+              <h3><%= item.title %></h3>
+              <p><%= item.description %></p>
                 <% for (let i = 0; i < item.tags.length; i ++) { %>
-                  <span class="card-text">#<%= item.tags[i] %></span>
+                  <span>#<%= item.tags[i] %></span>
                 <% } %>
           </div>
-          <div class="pt-2 d-flex justify-content-end card-bottom">
+          <div class="mt-4 d-flex justify-content-end">
             <% if (item.github === "") { %>
             <i class="d-none me-3 fa-align-right fab fa-github fa-2x"></i>
             <% } else { %>
-              <a href="<%= item.github %>" target="_blank"><i class="mud-pink me-3 fa-align-right fab fa-github fa-2x color-mud"></i></a>
+                <a href="<%= item.github %>" target="_blank">
+                    <i class="mud-pink me-3 fa-align-right fab fa-github fa-2x color-mud"></i>
+                </a>
             <% } %>
             <% if (item.demo === "") { %>
-            <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
+                <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
             <% } else { %>
-              <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
+                <a href="<%= item.demo %>" class="btn btn-secondary border-radius-30 background-mud" target="_blank">Demo</a>
             <% } %>
           </div>
         </div>

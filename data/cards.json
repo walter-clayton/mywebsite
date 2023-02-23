@@ -4,14 +4,14 @@
     "description": "Website built to demonstrate my skills.",
     "demo": "#",
     "github": "https://github.com/walter-clayton/mywebsite",
-    "tags": ["WebDeveloper", "Javascript", "Design"]
+    "tags": ["WebDeveloper", "Javascript", "Bootstrap"]
   },
   {
     "title": "Afitpilot",
     "description": "Web App that measures people's somatotypes and creates an avatar that represents their body type.",
     "demo": "https://www.afitpilot.com/",
     "github": "https://github.com/walter-clayton/afitpilot-somatotype",
-    "tags": ["React", "Typescript", "SportScience"]
+    "tags": ["React", "Typescript", "MUI"]
   },
   {
     "title": "ESMA",
