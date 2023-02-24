@@ -80,6 +80,9 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .mt-n1{
     margin-top: -0.25rem;
 }
+.mt-lg-n100{
+    margin-top: -100px;
+}
 /* Borders */
 .border-radius-30{
     border-radius: 30px !important;
@@ -194,6 +197,9 @@ header {
     .h-md-200{
         height: 200px;
     }
+    .mt-md-n125{
+        margin-top: -125px;
+    }
 }
 @media (max-width: 992px) {
     .cols{
@@ -229,6 +235,9 @@ header {
         width: 200px;
         height: 200px;
     }
+    .mt-sm-n75{
+        margin-top: -75px;
+    }
 }
 @media (max-width: 576px) {
     .border-radius-30-sm{
@@ -241,6 +250,7 @@ header {
         margin: auto;
     }
 }
+/* Animations */
 .appear-one{
     animation: halfOpactiy 1s 1 forwards;
     opacity: 0;
@@ -264,6 +274,18 @@ header {
 .screen-writing-scroll{
     animation: horizontalScroll 5s forwards 1;
 }
+.reveal{
+    opacity: 0;
+}
+.reveal.active{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    opacity: 1;
+  }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 @keyframes horizontalScroll {
     0% {
         transform: translate3d(0, 8%, 0);
