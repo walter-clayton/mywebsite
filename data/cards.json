@@ -96,12 +96,5 @@
     "demo": "https://github.com/walter-clayton/cookieClicker",
     "github": "https://walter-clayton.github.io/cookieClicker/",
     "tags": ["Prototype", "Coding", "Javascript"]
-  },
-  {
-    "title": "Blogging",
-    "description": "Prototype built for blogging",
-    "demo": "",
-    "github": "https://github.com/walter-clayton/django_project",
-    "tags": ["Django", "Coding", "Prototype"]
   }
 ]
