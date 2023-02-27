@@ -65,9 +65,23 @@
   {
     "title": "YelpCamp",
     "description": "Web App that allows users to share campgrounds from all over the world.",
-    "demo": "",
+    "demo": "https://yelpcamp-3y3g.onrender.com/",
     "github": "https://github.com/walter-clayton/yelpcamp",
     "tags": ["Express", "Javascript", "MongoDB"]
+  },
+  {
+    "title": "Rugby",
+    "description": "Web pages to help rugby players follow their training programs and compare themselves.",
+    "demo": "https://walter-clayton.github.io/buc-rugby/",
+    "github": "https://github.com/walter-clayton/buc-rugby",
+    "tags": ["Frontend", "Bootstrap", "Chartjs"]
+  },
+  {
+    "title": "InstaBot",
+    "description": "Web Crawler that likes random hashtagged posts on instagram.",
+    "demo": "",
+    "github": "https://github.com/walter-clayton/instabot",
+    "tags": ["Selenium", "Backend", "Python"]
   },
   {
     "title": "GetFlix",
@@ -89,12 +103,5 @@
     "demo": "",
     "github": "https://github.com/walter-clayton/django_project",
     "tags": ["Django", "Coding", "Prototype"]
-  },
-  {
-    "title": "Blogging",
-    "description": "Prototype built for blogging",
-    "demo": "",
-    "github": "https://github.com/walter-clayton/buc-rugby",
-    "tags": ["Flask", "Coding", "Prototype"]
   }
 ]
