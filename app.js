@@ -15,10 +15,13 @@ app.locals.reviewData = require('./data/reviews.json');
 let reviewData = app.locals.reviewData
 
 app.get("/", function(req, res){
-    res.render("home");
+    res.render("home", {cardData: cardData});
 })
 app.get("/about", function(req, res){
-    res.render("about");
+    res.render("about", {reviewData: reviewData});
+})
+app.get("/project/:pagelink", function(req, res){
+    cardData.find( e => e.pagelink == req.params.pagelink ? res.render("project", {cardData, cardData}) : console.log("Page Not Found"))
 })
 
 var server = http.createServer(app);

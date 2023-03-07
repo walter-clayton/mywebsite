@@ -104,20 +104,13 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .d-none{
     display: none !important;
 }
-#landing-button {
-    border-color: #F9AA8F;
-    color: #F9AA8F;
-    border-width: 5px;
-    background-color: transparent;
-    width:150px;
-}
 .button-stack{
     border: none;
     border-bottom: 1px solid black;
     background-color: white;
 }
-#enter {
-    color: #F9AA8F !important;
+.color-mud{
+    color: #507A95;
 }
 .image-standard{
     width: 200px;

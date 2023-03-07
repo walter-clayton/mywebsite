@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "My Website",
     "description": "Website built to demonstrate my skills.",
     "demo": "#",
@@ -7,13 +8,16 @@
     "tags": ["WebDeveloper", "Javascript", "Bootstrap"]
   },
   {
+    "id": "2",
     "title": "Afitpilot",
     "description": "Web App that measures people's somatotypes and creates an avatar that represents their body type.",
     "demo": "https://www.afitpilot.com/",
     "github": "https://github.com/walter-clayton/afitpilot-somatotype",
-    "tags": ["React", "Typescript", "MUI"]
+    "tags": ["React", "Typescript", "MUI"],
+    "pagelink": "afitpilot"
   },
   {
+    "id": "3",
     "title": "ESMA",
     "description": "European Website built to enable administrators to manage clients and content.",
     "demo": "https://www.esma.europa.eu/",
@@ -21,6 +25,7 @@
     "tags": ["Business", "Analyst", "Drupal"]
   },
   {
+    "id": "4",
     "title": "ERC",
     "description": "European Website built to enable administrators to manage clients and content.",
     "demo": "https://erc.europa.eu/homepage",
@@ -28,6 +33,7 @@
     "tags": ["Business", "Analyst", "Drupal"]
   },
   {
+    "id": "5",
     "title": "EBA",
     "description": "European Website built to enable administrators to manage clients and content.",
     "demo": "https://www.eba.europa.eu/",
@@ -35,13 +41,16 @@
     "tags": ["Business", "Analyst", "Drupal"]
   },
   {
+    "id": "6",
     "title": "League Of Nations",
     "description": "Ecommerce Website built to upsell information to readers.",
     "demo": "https://leagueofnations.co.uk/",
     "github": "",
-    "tags": ["Algorithm", "Wordpress", "Ecommerce"]
+    "tags": ["Algorithm", "Wordpress", "Ecommerce"],
+    "pagelink": "leagueofnations"
   },
   {
+    "id": "7",
     "title": "Finlight",
     "description": "Web App selling asset management as a SASS for Family offices.",
     "demo": "https://www.finlight.com/",
@@ -49,6 +58,7 @@
     "tags": ["FinTech", "Vuejs", "Figma"]
   },
   {
+    "id": "8",
     "title": "Somatotype",
     "description": "Web Page that calculates people's somatotype and they can see their results on the graph.",
     "demo": "https://walter-clayton.github.io/somatotype/",
@@ -56,6 +66,7 @@
     "tags": ["Canvas", "Equation", "Javascript"]
   },
   {
+    "id": "9",
     "title": "Ecohoods",
     "description": "Visual Prototype for users to see how much money they have saved from using eco smart devices.",
     "demo": "https://walter-clayton.github.io/ecohoods/dashboard.html",
@@ -63,6 +74,7 @@
     "tags": ["Hackathon", "IBM", "Ideas"]
   },
   {
+    "id": "10",
     "title": "YelpCamp",
     "description": "Web App that allows users to share campgrounds from all over the world.",
     "demo": "https://yelpcamp-3y3g.onrender.com/",
@@ -70,6 +82,7 @@
     "tags": ["Express", "Javascript", "MongoDB"]
   },
   {
+    "id": "11",
     "title": "Rugby",
     "description": "Web pages to help rugby players follow their training programs and compare themselves.",
     "demo": "https://walter-clayton.github.io/buc-rugby/",
@@ -77,6 +90,7 @@
     "tags": ["Frontend", "Bootstrap", "Chartjs"]
   },
   {
+    "id": "12",
     "title": "InstaBot",
     "description": "Web Crawler that likes random hashtagged posts on instagram.",
     "demo": "",
@@ -84,6 +98,7 @@
     "tags": ["Selenium", "Backend", "Python"]
   },
   {
+    "id": "13",
     "title": "GetFlix",
     "description": "Prototype of a Netflix type of web app.",
     "demo": "",
@@ -91,6 +106,7 @@
     "tags": ["Prototype", "PHP", "MAMP"]
   },
   {
+    "id": "14",
     "title": "Loulou Clicker",
     "description": "This is a Cookie Clicker game.",
     "demo": "https://github.com/walter-clayton/cookieClicker",

@@ -1,0 +1,126 @@
+<%- include ('partials/header') %>
+    <div class="d-flex flex-column background-pink">
+        <div class="w-md-750 mx-auto reveal active">
+            <div class="p-5 row">
+                <div class="align-self-center col-md-7 col-12 order-2 order-md-1">
+                    <div class="d-flex flex-column">
+                        <h1 class="h1 text-center text-md-start text-black">Walter Clayton</h1>
+                        <p class="h5 text-center text-md-start  text-black">Turning abstract ideas into clean and simple solutions.</p>
+                        <a class="my-3 btn text-center background-mud mx-auto-sm-only w-fit-content" href="/documents/cv.pdf" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="align-self-center col-md-5 col-12 order-1 order-md-2">
+                    <img src="images/profile.png" class="rounded mx-auto d-block image-sm-standard image-large" alt="walter clayton profile picture">
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="mt-n1 w-100 overflow-visible" preserveAspectRatio="xMidYMin slice"
+    width="1513" height="92" viewBox="0 0 1513 92" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M1512.12 1.20728H0.115723L1512.12 91.61V1.20728Z" fill="#FECBB8"/>
+        <path d="M0.115723 90.8214H1512.12L0.115723 0.418701V90.8214Z" fill="#507A95"/>
+    </svg>
+    <div class="d-flex flex-column background-mud mt-n1">
+        <div class="w-md-750 mx-auto reveal active">
+            <div class="p-5 row">
+                <div class="align-self-center col-md-6 col-12 order-2">
+                    <div class="d-flex flex-column">
+                        <h4 class="h4 text-center text-md-start text-white">“Simplicity is complexity resolved”</h4>
+                        <hr class="mx-auto-sm-only my-2">
+                        <p class="text-center text-md-start text-white">Constantin Brancusi</p>
+                    </div>
+                </div>
+                <div class="align-self-center col-md-6 col-12 order-1">
+                    <img src="images/brancusi.png" class="rounded mx-auto-sm-only w-fit-content d-block image-sm-standard image-large" alt="walter clayton profile picture">
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="mt-n1 w-100 overflow-visible" preserveAspectRatio="xMidYMin slice"
+     width="834" height="91" viewBox="0 0 834 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0.540039H835L0 91V0.540039Z" fill="#507A95"/>
+        <path d="M835 91H-3.85046e-05L835 0.540009V91Z" fill="white"/>
+    </svg>
+    <div class="d-flex flex-column background-white mt-n1">
+        <div class="w-md-750 mx-auto reveal active">
+            <div class="p-5 mx-5 row ">
+                <div class="align-self-center col-12 order-1">
+                    <div class="d-flex flex-column">
+                        <div class="review h-md-200 h-sm-300">
+                            <h2 class="h1 text-center text-md-start text-black">Reviews</h2>
+                            <% reviewData.forEach(function(item, index){ %>
+                                <div class="review__items my-5">
+                                    <p class="h5 text-center text-md-start text-black">"<%= item.review %>"</p>
+                                    <hr class="mx-auto-sm-only my-2 border-secondary">
+                                    <p class="text-center text-md-start text-black"><%= item.author %></p>
+                                </div>
+                            <% }); %>
+                        </div>
+                        <div class="my-5 mx-auto-sm-only">
+                            <button type="button" class="btn background-white border-secondary" onclick="previousReview()">
+                                PREV
+                            </button>
+                            <button type="button" class="btn background-white border-secondary" onclick="nextReview()">
+                                NEXT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="mt-n1 w-100 overflow-visible" preserveAspectRatio="xMidYMin slice"
+    width="1512" height="91" viewBox="0 0 1512 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1512 0.0209961H0L1512 90.4237V0.0209961Z" fill="white"/>
+    </svg>        
+<script>
+// Previous and Next Button
+let rev = 0;
+carousel(rev);
+
+function previousReview() {
+rev = rev - 1;
+carousel(rev);
+}
+
+function nextReview() {
+rev = rev + 1;
+carousel(rev);
+}
+
+function carousel(review) {
+let reviews = document
+.getElementsByClassName("review__items");
+
+if (review >= reviews.length) {
+review = 0;
+rev = 0;
+}
+if (review < 0) {
+review = reviews.length - 1;
+rev = reviews.length - 1;
+}
+for (let i = 0; i < reviews.length; i++) {
+reviews[i].style.display = "none";
+}
+reviews[review].style.display = "block";
+}
+
+// Animations
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = windowHeight - elementTop;
+    if (elementVisible > 0) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+reveal();
+</script>
+<%- include ('partials/footer') %>
